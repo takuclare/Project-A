@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Project A",
+    "slug": "project-a-anime-voice-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f6e9ff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Project A necesita el micrófono para hablar con el asistente."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f6e9ff"
+      },
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "package": "com.projecta.voiceassistant"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Project A necesita el micrófono para hablar con el asistente."
+        }
+      ]
+    ]
+  }
+}
